@@ -958,7 +958,7 @@ if __name__ == "__main__":
                         get(f"{arguments.on_fail}?rid={runId}")
                     except Exception as ex:
                         log(f"Error getting callback url: {ex}")
-                exit()
+                sys.exit(0)
 
         except Exception:
             log(f"Cannot read logfile age - aborting.")
